@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  width: 70%;
+  border: 1px solid #000000;
+}
+
+.newsList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  border: 1px solid #000000;
+}
+
+.newsList li {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0;
+}
+
+.newsList li a .newspic {
+  width: 350px;
+  height: auto;
+  background-position: center;
+  background-size: auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.newsList li div {
+  margin-left: 30px;
+  border: 1px solid #8dfc26;
+}
+
+.newsList li div a {
+  text-decoration: none;
+}
+
+.newsList li div a h1 {
+  word-break: break-word;
+  padding: 10px 20px;
+  font-size: 15px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  color: #000;
+  background-color: #e0dcf1;
+}
+
+.newsList li div a h1:hover {
+  color: #fff;
+}
+
+.newsList li div div {
+  margin-left: 0;
+  background-color: #e6e3ff;
+  padding: 0 20px;
+  font-weight: bold;
+}
+
+.newsList li div .articleSummary {
+  word-break: break-word;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+/*# sourceMappingURL=style.css.map */
