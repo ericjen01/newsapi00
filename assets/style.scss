@@ -5,61 +5,120 @@
 .body {
 	width: 70%;
 	border: 1px solid #000000;
+	margin: auto;
+	text-decoration: none;
+}
+.plainText {
+	text-decoration: none;
+}
+.plainList {
+	list-style: none;
 }
 
-.newsList {
-	display: flex;
-	flex-direction: column;
+.newsSection {
 	width: 50%;
-	border: 1px solid #000000;
-	li {
-		list-style: none;
-		display: flex;
-		padding: 20px 0;
-		a {
-			.newspic {
-				width: 350px;
-				height: auto;
-				background-position: center;
-				background-size: auto;
-				border-radius: 10px;
-				box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
-			}
-		}
-		div {
-			margin-left: 30px;
-			border: 1px solid #8dfc26;
-			a {
-				text-decoration: none;
-				h1 {
-					word-break: break-word;
-					padding: 10px 20px;
-					font-size: 15px;
-					overflow: hidden;
-					display: -webkit-box;
-					-webkit-line-clamp: 3;
-					-webkit-box-orient: vertical;
-					color: #000;
-					background-color: rgb(224, 220, 241);
-				}
-				h1:hover {
-					color: #fff;
-				}
-			}
+	background-color: #e1eef3;
+	margin: auto;
+	text-align: left;
+	.newsWrap {
+		.newsList {
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
 
-			div {
-				margin-left: 0;
-				background-color: rgb(230, 227, 255);
-				padding: 0 20px;
-				font-weight: bold;
+			li:first-child {
+				grid-column: 1 / span 3;
+				border: solid 1px #cfdbe0;
+				margin: 3px;
+				.card {
+					display: flex;
+					img {
+						width: 66%;
+					}
+				}
 			}
-			.articleSummary {
-				word-break: break-word;
-				overflow: hidden;
-				display: -webkit-box;
-				-webkit-line-clamp: 3;
-				-webkit-box-orient: vertical;
+			li {
+				border: solid 1px #cfdbe0;
+				margin: 1px;
+				padding: 5px;
+
+				img {
+					width: 100%;
+				}
+				.card_content {
+					color: #000000;
+					padding: 3px 10px;
+					.date {
+						font-size: 15px;
+						padding-bottom: 20px;
+					}
+					.title {
+						font-size: 20px;
+					}
+				}
 			}
 		}
 	}
 }
+
+/*
+.newsSection {
+	width: 50%;
+	background-color: #e1eef3;
+	margin: auto;
+	text-align: left;
+	.newsWrap {
+		width: 100%;
+		display: table; //see article about table-layout: https://developer.mozilla.org/en-US/docs/Web/CSS/table-layout
+		table-layout: fixed; // see table-layout example at https://codepen.io/ericjen01/pen/OJQZKrM
+
+		.newsList {
+			display: flex;
+			flex-wrap: wrap; //flex-wrap to ensure new contents goes to the next row if out of space
+			li:first-child {
+				// first child of the list picked out and set as a large  main icon
+				width: 100%;
+				border: solid 1px #cfdbe0;
+				margin: 3px;
+				.card {
+					display: flex;
+					img {
+						width: 66%;
+					}
+				}
+			}
+			li {
+				width: 30%;
+				height: 100%;
+				border: solid 1px #cfdbe0;
+				margin: 1px;
+				padding: 5px;
+
+				.card {
+					img {
+						width: 100%;
+					}
+					.card_content {
+						padding: 10px;
+						color: #000000;
+						display: flex;
+						flex: 1;
+						flex-grow: 1;
+						flex-direction: column;
+
+						.title {
+							font-size: 20px;
+							padding-bottom: 20px;
+							flex-grow: 2;
+						}
+						.date {
+							font-size: 15px;
+							flex-grow: 2;
+	
+						}
+					}
+				}
+			}
+		}
+	}
+}*/
