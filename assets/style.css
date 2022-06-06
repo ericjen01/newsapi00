@@ -67,11 +67,11 @@
 }
 
 .newsSection .newsWrap .newsList li .card_content .date {
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .newsSection .newsWrap .newsList li .card_content .title {
-  font-size: 20px;
+  font-size: 17px;
   padding: 25px 0;
 }
 
@@ -119,7 +119,7 @@
             flex-direction: row;
   }
   .newsSection .newsWrap .newsList li:first-child .card img {
-    width: 50%;
+    width: 40%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -134,7 +134,7 @@
             flex-direction: row;
   }
   .newsSection .newsWrap .newsList .card img {
-    width: 50%;
+    width: 40%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
