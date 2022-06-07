@@ -25,6 +25,18 @@
 			width: 100%;
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
+			.card_content {
+				color: #000000;
+			}
+			.date {
+				padding: 10px 0 10px 15px;
+				font-size: 12px;
+				background-color: #cfdbe0;
+			}
+			.title {
+				font-size: 17px;
+				padding: 20px 0 20px 15px;
+			}
 
 			li:first-child {
 				grid-column: 1 / span 3;
@@ -44,17 +56,6 @@
 
 				img {
 					width: 100%;
-				}
-				.card_content {
-					color: #000000;
-					padding: 3px 10px;
-					.date {
-						font-size: 12px;
-					}
-					.title {
-						font-size: 17px;
-						padding: 25px 0;
-					}
 				}
 			}
 		} //newsList
